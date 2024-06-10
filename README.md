@@ -8,10 +8,9 @@ API는 hashtag와 review에 대해 검색할 수 있게 설계하였습니다.
 
 <br/>
 
-## 프로젝트 설치
+## 프로젝트 환경 구축
 
 ```
-
 # python venv 환경 생성 및 활성화
 python -m venv your_venv
 your_venv/Scripts/activate
@@ -55,12 +54,12 @@ cd elasticsearch-8.14.0/bin
 python server.py
 ```
 
-- **hashtag** 중 검색를 위해 다음 요청을 전송합니다: (windows CMD에서 요청하였습니다.)
+- **hashtag** 중 검색을 위해 다음 요청을 전송합니다: (windows CMD에서 요청하였습니다.)
 
 ```bash
 curl -X POST -H "Content-Type: application/json" -d "{ \"query\": \"로봇커피\" }" http://127.0.0.1:5000/hashtag
 ```
-- **review** 중 검색를 위해 다음 요청을 전송합니다:
+- **review** 중 검색을 위해 다음 요청을 전송합니다:
 
 ```bash
 curl -X POST -H "Content-Type: application/json" -d "{ \"query\": \"맛있는 자몽\" }" http://127.0.0.1:5000/review
